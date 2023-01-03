@@ -1,5 +1,5 @@
 
-package main.java.com.example;
+package com.example;
 import javax.swing.JOptionPane;
 
 public class Gui {
