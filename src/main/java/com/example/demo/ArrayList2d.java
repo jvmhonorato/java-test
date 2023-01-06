@@ -3,26 +3,34 @@ import java.util.ArrayList;
 
 public class ArrayList2d {
     public static void main (String[] args) {
-
-        ArrayList<String> food = new ArrayList<String>();
          
-        food.add("pizza");
-        food.add("hamburguer");
-        food.add("hotdog");
-        
-        //set method replace the declared array key
-        food.set(0, "sushi");
+        //generate array list of arry list
+        ArrayList<ArrayList<String>> GroceryList = new ArrayList<>();
 
-        //remove object declared by array key
-        food.remove(2);
+        ArrayList<String> bakerList = new ArrayList();
+         bakerList.add("Feijao");
+         bakerList.add("Arroz");
+         bakerList.add("Donuts");
 
-        //remove all array elements
-        food.clear();
+         ArrayList<String> produceList = new ArrayList();
+         produceList.add("ferrari");
+         produceList.add("porsche");
+         produceList.add("bmw");
 
-        for(int i=0 ; i<food.size(); i++) {
-            System.out.println(food.get(i));
-        }
+         ArrayList<String> bikeList = new ArrayList();
+         bikeList.add("ferrari");
+         bikeList.add("porsche");
+         bikeList.add("bmw");
 
+         GroceryList.add(bakerList);
+         GroceryList.add(produceList);
+         GroceryList.add(bikeList);
+
+        // show the array of arrys
+         System.out.println(GroceryList);
+
+         //take a specific item list of array list declared
+         System.out.println(GroceryList.get(0).get(1));
 
     };
 }
