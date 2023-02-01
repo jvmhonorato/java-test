@@ -18,4 +18,5 @@ public class Human {
     void drink() {
         System.out.println(this.name+"  is driking");
     }
+    
 }
